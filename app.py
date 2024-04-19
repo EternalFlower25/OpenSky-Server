@@ -32,7 +32,7 @@ TRANSLATIONS_FILE = 'translations.json'
 regex = r"[@#$%^&*()_+={}\[\]\\:\";'<>]"
 
 # Set the boolean setting to True to use JSON by default
-use_json = False
+use_json = True
 
 @app.route('/translate', methods=['POST'])
 def translate():
