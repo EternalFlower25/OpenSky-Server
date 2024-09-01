@@ -27,10 +27,13 @@ from flask import Flask, request, jsonify
 from translate import Translator
 
 app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "OpenSky Server is running!"
+
 TRANSLATIONS_FILE = 'translations.json'
-
 regex = r"[@#$%^&*()_+={}\[\]\\:\";'<>]"
-
 # Set the boolean setting to True to use JSON by default
 use_json = True
 
